@@ -57,7 +57,7 @@ namespace RaffleRandomPicker
         {
             Random g = new Random();
             string winner;
-            int winningNumber = g.Next(0, entriesNumber - 1);
+            int winningNumber = g.Next(0, entriesNumber);
             winner = listView1.Items[winningNumber].Text;
             MessageBox.Show("The winner is: " + winner, "Congratulations " + winner);
         }
