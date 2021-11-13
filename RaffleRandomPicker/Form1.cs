@@ -50,6 +50,7 @@ namespace RaffleRandomPicker
                 {
                     MessageBox.Show("Error message: " + ex.Message);
                 }
+                lblTotalEntries.Text = "Total entries: " + entriesNumber;
             }
         }
 

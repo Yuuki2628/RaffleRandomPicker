@@ -32,6 +32,7 @@ namespace RaffleRandomPicker
             this.btnReadFile = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.btnGetRandom = new System.Windows.Forms.Button();
+            this.lblTotalEntries = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnReadFile
@@ -64,11 +65,21 @@ namespace RaffleRandomPicker
             this.btnGetRandom.UseVisualStyleBackColor = true;
             this.btnGetRandom.Click += new System.EventHandler(this.btnGetRandom_Click);
             // 
+            // lblTotalEntries
+            // 
+            this.lblTotalEntries.AutoSize = true;
+            this.lblTotalEntries.Location = new System.Drawing.Point(131, 12);
+            this.lblTotalEntries.Name = "lblTotalEntries";
+            this.lblTotalEntries.Size = new System.Drawing.Size(68, 13);
+            this.lblTotalEntries.TabIndex = 3;
+            this.lblTotalEntries.Text = "Total entries:";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 334);
+            this.Controls.Add(this.lblTotalEntries);
             this.Controls.Add(this.btnGetRandom);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnReadFile);
@@ -77,6 +88,7 @@ namespace RaffleRandomPicker
             this.ShowIcon = false;
             this.Text = "Random Picker";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -85,6 +97,7 @@ namespace RaffleRandomPicker
         private System.Windows.Forms.Button btnReadFile;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Button btnGetRandom;
+        private System.Windows.Forms.Label lblTotalEntries;
     }
 }
 
